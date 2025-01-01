@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap");
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0 0;
+  margin: 0 0;
+  background-image: linear-gradient(
+    to right top,
+    #99b95e,
+    #9dc553,
+    #a1d245,
+    #a5de33,
+    #a8eb12
+  );
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+#map {
+  height: 100%;
+  /* width: 50%; */
+}
+.contents {
+  display: flex;
+  /* align-content: center; */
+  flex-direction: column;
+  border-radius: 9px;
+  align-items: center;
+}
+#forms {
+  width: 80%;
+  padding: 10px 10px;
+}
+input {
+  height: 1.4rem;
+  border: none;
+  border-bottom: rgb(61, 55, 55) solid 4px;
+  background: transparent;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.pushable {
+  background: hsl(330, 2%, 16%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  width: 10rem;
+  margin: 10px 0 0 auto;
+}
+.front {
+  display: block;
+  padding: 12px 35px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: hsl(216, 79%, 50%);
+  color: white;
+  transform: translateY(-6px);
+}
+.pushable:active .front {
+  transform: translateY(-2px);
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 0px;
+}
+.rubik-vinyl-regular {
+  font-family: "Rubik Vinyl", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-vinyl-regular {
+  font-family: "Rubik Vinyl", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sixtyfour-wow {
+  font-family: "Sixtyfour", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "BLED" 0, "SCAN" 0;
+  color: white;
+}
+.hidden {
+  display: none;
+}
+.message {
+  height: 100px;
+  width: 100%;
+  background-color: #677153;
+  border-radius: 10px;
+  border-left: yellow solid 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#desc {
+  margin-left: 10px;
+
+  font-size: 2rem;
+  text-align: left;
+  margin-top: 10px;
+}
+.message p {
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+input:focus {
+  border-color: blue;
+  outline: none;
+  font-size: 1.2rem;
+}
+.popup {
+  color: #677153;
+  /* color: white; */
+  font-size: 1.4rem;
+}
